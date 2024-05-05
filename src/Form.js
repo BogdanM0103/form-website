@@ -61,10 +61,10 @@ const Form = () => {
                     </div>
                 </div>
                 <div className="third-row">
-                    {/* <div className="file-upload"> */}
-                        {/* <label htmlFor="file">Upload File:</label> */}
-                        {/* <input type="file" id="file" name="file" value={ formData.file } onChange={ handleChange } /> */}
-                    {/* </div> */}
+                    <div className="file-upload">
+                        <label htmlFor="file">Upload File:</label>
+                        <input type="file" id="file" name="file" value={ formData.file } onChange={ handleChange } />
+                    </div>
                     <div className="submit-button">
                         <button type="submit">Submit</button>
                     </div>
