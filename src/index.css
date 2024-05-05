@@ -25,6 +25,10 @@ code {
   display: flex;
 }
 
+.third-row {
+  display: flex;
+}
+
 .first-name {
   display: flex;
   flex-direction: column;
@@ -45,7 +49,7 @@ code {
   flex-direction: column;
 }
 
-.third-row {
+.file-upload {
   display: flex;
   flex-direction: column;
 }

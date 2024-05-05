@@ -23,8 +23,13 @@ const Form = () => {
                     </div>
                 </div>
                 <div className="third-row">
-                    <label htmlFor="">Upload File:</label>
-                    <input type="file" />
+                    <div className="file-upload">
+                        <label htmlFor="">Upload File:</label>
+                        <input type="file" />
+                    </div>
+                    <div className="submit-button">
+                        <button>Submit</button>
+                    </div>
                 </div>
             </form>
         </div>
