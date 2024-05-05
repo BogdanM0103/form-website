@@ -21,7 +21,7 @@ const Form = () => {
         // Reset the form after submission (optional)
         setFormData({
             firstName: '',
-            lastName: '',
+            secondName: '',
             email: '',
             phone: '',
             file: null
@@ -36,10 +36,11 @@ const Form = () => {
             [name]: files ? files[0] : value
         }));
     };
+    
 
     return ( 
         <div className="container">
-            <form onSubmit={ handleSubmit } action="" method="POST" encType="multipart/form-data">
+            <form onSubmit={ handleSubmit } action="submit.php" method="POST" encType="multipart/form-data">
                 <div className="first-row">
                     <div className="first-name">
                         <label htmlFor="firstName">First Name:</label>
@@ -63,7 +64,7 @@ const Form = () => {
                 <div className="third-row">
                     <div className="file-upload">
                         <label htmlFor="file"><i className='fa-solid fa-upload'></i>Upload Your CV</label>
-                        <input className="inputfile" type="file" id="file" name="file" value={ formData.file } onChange={ handleChange } />
+                        <input className="inputfile" type="file" id="file" name="file" onChange={handleChange} />
                     </div>
                 </div>
                 <div className="fourth-row">
