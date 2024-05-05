@@ -62,11 +62,13 @@ const Form = () => {
                 </div>
                 <div className="third-row">
                     <div className="file-upload">
-                        <label htmlFor="file">Upload File:</label>
-                        <input type="file" id="file" name="file" value={ formData.file } onChange={ handleChange } />
+                        <label htmlFor="file"><i className='fa-solid fa-upload'></i>Upload Your CV</label>
+                        <input className="inputfile" type="file" id="file" name="file" value={ formData.file } onChange={ handleChange } />
                     </div>
+                </div>
+                <div className="fourth-row">
                     <div className="submit-button">
-                        <button type="submit">Submit</button>
+                        <button type="submit" className='my-button'>Submit</button>
                     </div>
                 </div>
             </form>

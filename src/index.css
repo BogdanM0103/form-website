@@ -15,18 +15,22 @@ code {
 .container {
   display: flex;
   flex-direction: column;
+  padding: 200px 100px 200px 100px;
 }
 
 .first-row {
   display: flex;
+  justify-content: space-around;
 }
 
 .second-row {
   display: flex;
+  justify-content: space-around;
 }
 
 .third-row {
   display: flex;
+  justify-content: center;
 }
 
 .first-name {
@@ -49,7 +53,56 @@ code {
   flex-direction: column;
 }
 
+.file-upload label {
+  background-color: red;
+  padding: 10px;
+  margin: 10px;
+}
+
 .file-upload {
   display: flex;
   flex-direction: column;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid red;
+  border-radius: 4px;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+label {
+  border-radius: 5px;
+}
+
+.file-upload label {
+  width: 426px;
+}
+
+.my-button {
+  background-color: red;
+  width: 446px;
+  height: 58px;
+  border-radius: 5px;
+  font-size: calc(10px + 2vmin);
+  color: #ffffff;
+  box-shadow: none;
+  border: none;
 }
