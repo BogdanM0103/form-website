@@ -57,6 +57,7 @@ code {
   background-color: red;
   padding: 10px;
   margin: 10px;
+  text-align: center;
 }
 
 .file-upload {
@@ -88,8 +89,10 @@ textarea {
   resize: none;
 }
 
+
 label {
   border-radius: 5px;
+  text-align: left;
 }
 
 .file-upload label {
