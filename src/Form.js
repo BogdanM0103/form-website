@@ -43,21 +43,21 @@ const Form = () => {
             <form onSubmit={ handleSubmit } action="submit.php" method="POST" encType="multipart/form-data">
                 <div className="first-row">
                     <div className="first-name">
-                        <label htmlFor="firstName">First Name:</label>
+                        <label htmlFor="firstName">First Name</label>
                         <input type="text" id="firstName" name="firstName" value={ formData.firstName } onChange={ handleChange } placeholder='John' />
                     </div>
                     <div className="second-name">
-                        <label htmlFor="secondName">Second Name:</label>
+                        <label htmlFor="secondName">Second Name</label>
                         <input type="text" id="secondName" name="secondName" value={ formData.secondName } onChange={ handleChange } placeholder='Smith' />
                     </div>
                 </div>
                 <div className="second-row">
                     <div className="email">
-                        <label htmlFor="email">EMail:</label>
+                        <label htmlFor="email">EMail</label>
                         <input type="text" id="email" name="email" value={ formData.email } onChange={ handleChange } placeholder='johnsmith@gmail.com'/>
                     </div>
                     <div className="phone">
-                        <label htmlFor="phone">Phone:</label>
+                        <label htmlFor="phone">Phone</label>
                         <input type="text" id="phone" name="phone" value={ formData.phone } onChange={ handleChange } placeholder='+40 765 193 435' />
                     </div>
                 </div>
